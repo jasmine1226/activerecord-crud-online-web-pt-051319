@@ -85,7 +85,7 @@ def can_update_multiple_items_at_once
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
   end
   Movie.all.map do |m|
-    Movie.udpate(m.id, title: "A Movie")
+    Movie.update(m.id, title: "A Movie")
   end
 end
 
